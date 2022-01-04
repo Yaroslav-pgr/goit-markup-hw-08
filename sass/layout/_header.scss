@@ -1,0 +1,121 @@
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px solid #ECECEC;
+    background:var(--header-background-color);
+}
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+.header-list__item{
+    margin-right: 50px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.header-list{
+    display: flex;
+}
+.header-container{
+    display: flex;
+    align-items: center; 
+}
+.header-logo{
+    font-family:'Raleway';
+    font-weight: bold;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--header-logo-color)  
+}
+.header-logo-title {
+    font-family: 'Raleway';
+    font-weight: bold;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 94px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    color: var(--header-studio-color)
+}
+.header-list{
+    align-items: center;
+}
+.header-list__item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    transition: color 250ms linear;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+    position: relative;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    &.current::after{
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: var(--header-logo-color);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+    }
+}
+.header-auth__list{
+    margin-left: auto;
+    display: flex;
+} 
+.header-mail{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14; 
+    display: flex;
+    align-items: center;
+    margin-right: 51px;
+    transition: color 250ms linear;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+    &:hover .header-mail-icon,
+    &:focus .header-mail-icon{
+        fill: var(--accent-color);
+    }
+}
+.header-mail-icon{
+    margin-right: 10px;
+    fill: var(--text-color);
+    transition: fill 250ms linear;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+}
+.header-auth__item::after{
+    background-image: url(../images/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-tel{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14; 
+    display: flex; 
+    align-items: center;
+    transition: color 250ms linear;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+    &:hover .header-tel-icon,
+    &:focus .header-tel-icon{
+        fill: var(--accent-color);
+    }
+}
+.header-tel-icon{
+    margin-right: 10px;
+    fill: var(--text-color);
+    transition: fill 250ms linear;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+}

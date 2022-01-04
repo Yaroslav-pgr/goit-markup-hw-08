@@ -1,0 +1,36 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--header-background-color);
+}
+.list {
+    list-style: none;
+    }
+a {
+    text-decoration: none;
+    }
+.weight{
+    font-weight: bold;
+    }
+.text{
+    font-size: 26px;
+    }
+.link {
+    font-size: 16px;
+    }
+.success{
+    color: var(--text-color);
+    }
+.title{
+    color: var(--title-color);
+    }
+.item{
+    letter-spacing: 0.02em; 
+    }
+.table{
+    letter-spacing: 0.06em;
+    }
+.main{
+    color: var(--main-title-color)
+    }  

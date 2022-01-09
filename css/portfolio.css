@@ -136,10 +136,15 @@ a {
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border: 1px solid #ECECEC;
   background: var(--header-background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header-navigation {

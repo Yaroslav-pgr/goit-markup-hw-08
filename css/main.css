@@ -328,10 +328,15 @@ a {
 /*<!--title="+38 (099) 999-99-99"-->
 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border: 1px solid #ECECEC;
   background: var(--header-background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header-navigation {

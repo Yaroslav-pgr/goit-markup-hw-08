@@ -237,7 +237,7 @@ a {
   border-radius: 10px;
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -34px;
 }
 
 .header-auth__list {
@@ -292,6 +292,13 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-mail {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .header-mail-icon {
   margin-right: 10px;
   fill: var(--text-color);
@@ -339,6 +346,13 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-tel {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .header-tel-icon {
   margin-right: 10px;
   fill: var(--text-color);
@@ -377,7 +391,7 @@ a {
   position: fixed;
   background-color: #FFFFFF;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
@@ -492,6 +506,13 @@ a {
 
 .main-list__btn {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-list__btn {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 }
 
 .main-link-btn {

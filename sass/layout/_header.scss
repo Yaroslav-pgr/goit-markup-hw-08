@@ -75,7 +75,7 @@
         border-radius: 10px;
         position: absolute;
         left: 0;
-        bottom: -32px;
+        bottom: -34px;
     }
 }
 .header-auth__list{
@@ -114,6 +114,11 @@
         line-height: calc(14 / 12); 
         padding-top: 21px;
     }
+    @media screen and (min-width: 1200px) {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    
 }
 .header-mail-icon{
     margin-right: 10px;
@@ -151,6 +156,10 @@
         padding-bottom: 21px;
         margin-top: 10px;
     }
+    @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    padding-bottom: 0;
+    }
 }
 .header-tel-icon{
     margin-right: 10px;
@@ -183,7 +192,7 @@
     position: fixed;
     background-color: #FFFFFF;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 999;

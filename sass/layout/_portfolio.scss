@@ -9,6 +9,10 @@
 }
 .main-list__btn{
     margin-right: 8px;
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        margin-right: 8px;
+        margin-bottom: 15px;
+    }
 }
 .main-link-btn {
     font-family: inherit;
@@ -38,6 +42,7 @@
     &:hover{
         color:var(--main-title-color) 
     } 
+    
 }
 .portfolio-list{
     align-items: center;

@@ -584,7 +584,7 @@ pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
   height: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }

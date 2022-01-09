@@ -12,7 +12,8 @@
 }
 .modal{
     padding: 40px;
-    width: 528px;
+    max-width: 450px;
+    width: 100%;
     background: var(--title-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -32,7 +33,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 50%;
-    @extend %align-list1;
+    @extend %align-link;
     transition: fill 250ms linear;
     &:focus{
         fill: var(--accent-color)
@@ -116,7 +117,8 @@
     }
 }
 .modal-check-text{
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     color:var(--text-color);
     display: flex;
     align-items: center;
@@ -140,8 +142,8 @@
     border: none;
 }
 .check-text{
-    margin-left: 5px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     color: var(--accent-color);
     text-decoration: underline;
 }

@@ -1,7 +1,20 @@
 .footer-container{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 320px)and (max-width: 767px){
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }
 .footer-logo{
     font-family:'Raleway';
@@ -9,7 +22,11 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--header-logo-color)
+    color:var(--header-logo-color);
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+        font-size: 24px;
+        line-height: calc(28 / 24);
+    }
 }
 .footer-logo__title{
     font-family:'Raleway';
@@ -17,7 +34,11 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--main-title-color)
+    color:var(--main-title-color);
+    @media screen and (min-width: 320px) and (max-width: 1199px){
+        font-size: 24px;
+        line-height: calc(28 / 24);
+    }
 }
 .footer-mailing__text{
     line-height: 1.14;
@@ -27,14 +48,26 @@
     color: var(--main-title-color);
 }
 .footer-online-form{
+    @media screen and (min-width: 320px){
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: baseline;
+    }
 }
 .online-input{
     outline: transparent;
     width: 358px;
     height: 50px;
     padding: 16px;
+    margin-bottom: 20px;
     color: var(--main-title-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);

@@ -462,7 +462,7 @@ pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
   line-height: calc(16 / 14);
   display: flex;
   align-items: center;
-  margin-right: 51px;
+  margin-right: 31px;
   transition: color 250ms linear;
   cubic-bezier: 0.4, 0, 0.2, 1;
 }

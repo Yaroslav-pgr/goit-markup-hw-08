@@ -328,7 +328,7 @@ a {
 /*<!--title="+38 (099) 999-99-99"-->
 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
 .page-header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   background: var(--header-background-color);
 }
 
@@ -373,6 +373,13 @@ pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
   align-items: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header-container {
+    margin-top: 16px;
+    margin-bottom: 15px;
+  }
+}
+
 .header-logo {
   font-family: 'Raleway';
   font-weight: bold;
@@ -382,7 +389,7 @@ pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
   color: var(--header-logo-color);
 }
 
-@media screen and (min-width: 320px) and (min-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header-logo {
     font-size: 24px;
     line-height: calc(28 / 24);
@@ -401,10 +408,11 @@ pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
   color: var(--header-studio-color);
 }
 
-@media screen and (min-width: 320px) and (min-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header-logo-title {
     font-size: 24px;
     line-height: calc(28 / 24);
+    padding: 0;
   }
 }
 
@@ -685,6 +693,14 @@ pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"*/
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 410px) {
+  .mob-menu-social-link {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.02em;
+  }
 }
 
 .hero {
@@ -1175,6 +1191,7 @@ img {
   align-items: center;
   color: var(--main-title-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-social__list {

@@ -6,6 +6,9 @@
     @media screen and (min-width: 768px){
         justify-content: center;
     }
+    @media screen and (min-width: 1200px){
+        margin-top: 0;
+    }
 }
 .main-list__btn{
     margin-right: 8px;
